@@ -1,0 +1,158 @@
+[
+  {
+    "name": "Albanija",
+    "code": "24"
+  },
+  {
+    "name": "Australija",
+    "code": "59"
+  },
+  {
+    "name": "Austrija",
+    "code": "28"
+  },
+  {
+    "name": "Belgija",
+    "code": "32"
+  },
+  {
+    "name": "Bugarska",
+    "code": "40"
+  },
+  {
+    "name": "Češka Republika",
+    "code": "33"
+  },
+  {
+    "name": "Crna Gora",
+    "code": "26"
+  },
+  {
+    "name": "Danska",
+    "code": "34"
+  },
+  {
+    "name": "Finska",
+    "code": "31"
+  },
+  {
+    "name": "Francuska",
+    "code": "38"
+  },
+  {
+    "name": "Grčka",
+    "code": "41"
+  },
+  {
+    "name": "Holandija",
+    "code": "53"
+  },
+  {
+    "name": "Hrvatska",
+    "code": "22"
+  },
+  {
+    "name": "Irska",
+    "code": "56"
+  },
+  {
+    "name": "Island",
+    "code": "55"
+  },
+  {
+    "name": "Italija",
+    "code": "29"
+  },
+  {
+    "name": "Kanada",
+    "code": "58"
+  },
+  {
+    "name": "Lihtenštajn",
+    "code": "43"
+  },
+  {
+    "name": "Litvanija",
+    "code": "44"
+  },
+  {
+    "name": "Luksemburg",
+    "code": "45"
+  },
+  {
+    "name": "Mađarska",
+    "code": "42"
+  },
+  {
+    "name": "Njemačka",
+    "code": "27"
+  },
+  {
+    "name": "Norveška",
+    "code": "35"
+  },
+  {
+    "name": "Novi Zeland",
+    "code": "60"
+  },
+  {
+    "name": "Poljska",
+    "code": "46"
+  },
+  {
+    "name": "Portugal",
+    "code": "52"
+  },
+  {
+    "name": "Rumunija",
+    "code": "47"
+  },
+  {
+    "name": "Rusija",
+    "code": "54"
+  },
+  {
+    "name": "Sjedinjene Američke Države",
+    "code": "57"
+  },
+  {
+    "name": "Sjeverna Makedonija",
+    "code": "25"
+  },
+  {
+    "name": "Slovačka",
+    "code": "48"
+  },
+  {
+    "name": "Slovenija",
+    "code": "23"
+  },
+  {
+    "name": "Španija",
+    "code": "39"
+  },
+  {
+    "name": "Srbija",
+    "code": "21"
+  },
+  {
+    "name": "Švedska",
+    "code": "30"
+  },
+  {
+    "name": "Švicarska",
+    "code": "37"
+  },
+  {
+    "name": "Turska",
+    "code": "50"
+  },
+  {
+    "name": "Ukrajina",
+    "code": "51"
+  },
+  {
+    "name": "Velika Britanija",
+    "code": "36"
+  }
+]

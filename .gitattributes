@@ -1,0 +1,9 @@
+# Sve tekstualne datoteke se čuvaju sa LF krajevima linija.
+* text=auto eol=lf
+
+# Izvorni JSON je od početka spremljen sa CRLF krajevima linija.
+# Ne normalizujemo ga, da bi se sadržaj na raw linku ostao bajt-za-bajt isti.
+kantoni*BiH.json -text
+
+# Generisani fajlovi: sakrij iz diff prikaza na GitHubu.
+dist/** linguist-generated=true

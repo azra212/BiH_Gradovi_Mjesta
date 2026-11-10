@@ -1,0 +1,866 @@
+[
+  {
+    "entity": "Federacija BiH",
+    "group": "Unsko-sanski kanton",
+    "name": "Bihać",
+    "code": "3"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Unsko-sanski kanton",
+    "name": "Bosanska Krupa",
+    "code": "82"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Unsko-sanski kanton",
+    "name": "Bosanski Petrovac",
+    "code": "4"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Unsko-sanski kanton",
+    "name": "Bužim",
+    "code": "7"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Unsko-sanski kanton",
+    "name": "Cazin",
+    "code": "8"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Unsko-sanski kanton",
+    "name": "Ključ",
+    "code": "93"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Unsko-sanski kanton",
+    "name": "Sanski Most",
+    "code": "32"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Unsko-sanski kanton",
+    "name": "Velika Kladuša",
+    "code": "104"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Posavski kanton",
+    "name": "Domaljevac-Šamac",
+    "code": "86"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Posavski kanton",
+    "name": "Odžak",
+    "code": "28"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Posavski kanton",
+    "name": "Orašje",
+    "code": "98"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Tuzlanski kanton",
+    "name": "Banovići",
+    "code": "2"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Tuzlanski kanton",
+    "name": "Čelić",
+    "code": "106"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Tuzlanski kanton",
+    "name": "Doboj Istok",
+    "code": "85"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Tuzlanski kanton",
+    "name": "Gračanica",
+    "code": "15"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Tuzlanski kanton",
+    "name": "Gradačac",
+    "code": "89"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Tuzlanski kanton",
+    "name": "Kalesija",
+    "code": "92"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Tuzlanski kanton",
+    "name": "Kladanj",
+    "code": "21"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Tuzlanski kanton",
+    "name": "Lukavac",
+    "code": "25"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Tuzlanski kanton",
+    "name": "Sapna",
+    "code": "100"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Tuzlanski kanton",
+    "name": "Srebrenik",
+    "code": "33"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Tuzlanski kanton",
+    "name": "Teočak",
+    "code": "34"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Tuzlanski kanton",
+    "name": "Tuzla",
+    "code": "37"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Tuzlanski kanton",
+    "name": "Živinice",
+    "code": "44"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Zeničko-dobojski kanton",
+    "name": "Breza",
+    "code": "83"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Zeničko-dobojski kanton",
+    "name": "Doboj Jug",
+    "code": "9"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Zeničko-dobojski kanton",
+    "name": "Kakanj",
+    "code": "19"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Zeničko-dobojski kanton",
+    "name": "Maglaj",
+    "code": "96"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Zeničko-dobojski kanton",
+    "name": "Olovo",
+    "code": "29"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Zeničko-dobojski kanton",
+    "name": "Tešanj",
+    "code": "35"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Zeničko-dobojski kanton",
+    "name": "Usora",
+    "code": "103"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Zeničko-dobojski kanton",
+    "name": "Vareš",
+    "code": "38"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Zeničko-dobojski kanton",
+    "name": "Visoko",
+    "code": "39"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Zeničko-dobojski kanton",
+    "name": "Zavidovići",
+    "code": "41"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Zeničko-dobojski kanton",
+    "name": "Zenica",
+    "code": "42"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Zeničko-dobojski kanton",
+    "name": "Žepče",
+    "code": "107"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Bosansko-podrinjski kanton",
+    "name": "Goražde",
+    "code": "88"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Bosansko-podrinjski kanton",
+    "name": "Pale (FBiH)",
+    "code": ""
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Bosansko-podrinjski kanton",
+    "name": "Ustikolina",
+    "code": "81"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Srednjobosanski kanton",
+    "name": "Bugojno",
+    "code": "6"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Srednjobosanski kanton",
+    "name": "Busovača",
+    "code": "84"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Srednjobosanski kanton",
+    "name": "Dobretići",
+    "code": "10"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Srednjobosanski kanton",
+    "name": "Donji Vakuf",
+    "code": "11"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Srednjobosanski kanton",
+    "name": "Fojnica",
+    "code": "12"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Srednjobosanski kanton",
+    "name": "Gornji Vakuf-Uskoplje",
+    "code": "14"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Srednjobosanski kanton",
+    "name": "Jajce",
+    "code": "91"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Srednjobosanski kanton",
+    "name": "Kiseljak",
+    "code": "20"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Srednjobosanski kanton",
+    "name": "Kreševo",
+    "code": "94"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Srednjobosanski kanton",
+    "name": "Novi Travnik",
+    "code": "97"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Srednjobosanski kanton",
+    "name": "Travnik",
+    "code": "36"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Srednjobosanski kanton",
+    "name": "Vitez",
+    "code": "40"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Hercegovačko-neretvanski kanton",
+    "name": "Čapljina",
+    "code": "48"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Hercegovačko-neretvanski kanton",
+    "name": "Čitluk",
+    "code": "43"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Hercegovačko-neretvanski kanton",
+    "name": "Jablanica",
+    "code": "18"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Hercegovačko-neretvanski kanton",
+    "name": "Konjic",
+    "code": "22"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Hercegovačko-neretvanski kanton",
+    "name": "Mostar",
+    "code": "26"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Hercegovačko-neretvanski kanton",
+    "name": "Neum",
+    "code": "27"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Hercegovačko-neretvanski kanton",
+    "name": "Prozor",
+    "code": "99"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Hercegovačko-neretvanski kanton",
+    "name": "Ravno",
+    "code": "31"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Hercegovačko-neretvanski kanton",
+    "name": "Stolac",
+    "code": "101"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Zapadnohercegovački kanton",
+    "name": "Grude",
+    "code": "16"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Zapadnohercegovački kanton",
+    "name": "Ljubuški",
+    "code": "95"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Zapadnohercegovački kanton",
+    "name": "Posušje",
+    "code": "30"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Zapadnohercegovački kanton",
+    "name": "Široki Brijeg",
+    "code": "136"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Kanton Sarajevo",
+    "name": "Hadžići",
+    "code": "90"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Kanton Sarajevo",
+    "name": "Ilidža",
+    "code": "80"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Kanton Sarajevo",
+    "name": "Ilijaš",
+    "code": "17"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Kanton Sarajevo",
+    "name": "Sarajevo - Centar",
+    "code": "133"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Kanton Sarajevo",
+    "name": "Sarajevo - Novi Grad",
+    "code": "132"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Kanton Sarajevo",
+    "name": "Sarajevo - Novo Sarajevo",
+    "code": "131"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Kanton Sarajevo",
+    "name": "Sarajevo - Stari Grad",
+    "code": "130"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Kanton Sarajevo",
+    "name": "Trnovo",
+    "code": "139"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Kanton Sarajevo",
+    "name": "Vogošća",
+    "code": "105"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Kanton 10",
+    "name": "Bosansko Grahovo",
+    "code": "5"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Kanton 10",
+    "name": "Drvar",
+    "code": "87"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Kanton 10",
+    "name": "Glamoč",
+    "code": "13"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Kanton 10",
+    "name": "Kupres",
+    "code": "23"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Kanton 10",
+    "name": "Livno",
+    "code": "24"
+  },
+  {
+    "entity": "Federacija BiH",
+    "group": "Kanton 10",
+    "name": "Tomislavgrad",
+    "code": "102"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Banjalučka regija",
+    "name": "Banja Luka",
+    "code": "79"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Banjalučka regija",
+    "name": "Čelinac",
+    "code": "108"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Banjalučka regija",
+    "name": "Gradiška",
+    "code": "72"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Banjalučka regija",
+    "name": "Istočni Drvar",
+    "code": ""
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Banjalučka regija",
+    "name": "Jezero",
+    "code": "68"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Banjalučka regija",
+    "name": "Kneževo",
+    "code": "67"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Banjalučka regija",
+    "name": "Kostajnica",
+    "code": "66"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Banjalučka regija",
+    "name": "Kotor Varoš",
+    "code": "119"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Banjalučka regija",
+    "name": "Kozarska Dubica",
+    "code": "65"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Banjalučka regija",
+    "name": "Krupa na Uni",
+    "code": "64"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Banjalučka regija",
+    "name": "Kupres (RS)",
+    "code": ""
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Banjalučka regija",
+    "name": "Laktaši",
+    "code": "118"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Banjalučka regija",
+    "name": "Mrkonjić Grad",
+    "code": "61"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Banjalučka regija",
+    "name": "Novi Grad",
+    "code": "128"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Banjalučka regija",
+    "name": "Oštra Luka",
+    "code": "129"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Banjalučka regija",
+    "name": "Petrovac",
+    "code": ""
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Banjalučka regija",
+    "name": "Prijedor",
+    "code": "56"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Banjalučka regija",
+    "name": "Prnjavor",
+    "code": "114"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Banjalučka regija",
+    "name": "Ribnik",
+    "code": "122"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Banjalučka regija",
+    "name": "Šipovo",
+    "code": "45"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Banjalučka regija",
+    "name": "Srbac",
+    "code": "53"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Dobojsko-Bijeljinska regija",
+    "name": "Bijeljina",
+    "code": "77"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Dobojsko-Bijeljinska regija",
+    "name": "Brod",
+    "code": "76"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Dobojsko-Bijeljinska regija",
+    "name": "Derventa",
+    "code": "125"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Dobojsko-Bijeljinska regija",
+    "name": "Doboj",
+    "code": "134"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Dobojsko-Bijeljinska regija",
+    "name": "Donji Žabar",
+    "code": "74"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Dobojsko-Bijeljinska regija",
+    "name": "Lopare",
+    "code": "117"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Dobojsko-Bijeljinska regija",
+    "name": "Modriča",
+    "code": "116"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Dobojsko-Bijeljinska regija",
+    "name": "Pelagićevo",
+    "code": "57"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Dobojsko-Bijeljinska regija",
+    "name": "Petrovo",
+    "code": "135"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Dobojsko-Bijeljinska regija",
+    "name": "Šamac",
+    "code": "47"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Dobojsko-Bijeljinska regija",
+    "name": "Stanari",
+    "code": "138"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Dobojsko-Bijeljinska regija",
+    "name": "Teslić",
+    "code": "52"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Dobojsko-Bijeljinska regija",
+    "name": "Ugljevik",
+    "code": "51"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Dobojsko-Bijeljinska regija",
+    "name": "Vukosavlje",
+    "code": "137"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Sarajevsko-Zvornička regija",
+    "name": "Bratunac",
+    "code": "126"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Sarajevsko-Zvornička regija",
+    "name": "Han Pijesak",
+    "code": "123"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Sarajevsko-Zvornička regija",
+    "name": "Istočna Ilidža",
+    "code": "71"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Sarajevsko-Zvornička regija",
+    "name": "Istočni Stari Grad",
+    "code": "69"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Sarajevsko-Zvornička regija",
+    "name": "Istočno Novo Sarajevo",
+    "code": ""
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Sarajevsko-Zvornička regija",
+    "name": "Istočno Sarajevo",
+    "code": "121"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Sarajevsko-Zvornička regija",
+    "name": "Milići",
+    "code": "62"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Sarajevsko-Zvornička regija",
+    "name": "Novo Goražde",
+    "code": "115"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Sarajevsko-Zvornička regija",
+    "name": "Osmaci",
+    "code": "59"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Sarajevsko-Zvornička regija",
+    "name": "Pale",
+    "code": "58"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Sarajevsko-Zvornička regija",
+    "name": "Rogatica",
+    "code": "55"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Sarajevsko-Zvornička regija",
+    "name": "Rudo",
+    "code": "54"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Sarajevsko-Zvornička regija",
+    "name": "Šekovići",
+    "code": "46"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Sarajevsko-Zvornička regija",
+    "name": "Sokolac",
+    "code": "113"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Sarajevsko-Zvornička regija",
+    "name": "Srebrenica",
+    "code": "112"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Sarajevsko-Zvornička regija",
+    "name": "Trnovo (RS)",
+    "code": ""
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Sarajevsko-Zvornička regija",
+    "name": "Višegrad",
+    "code": "110"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Sarajevsko-Zvornička regija",
+    "name": "Vlasenica",
+    "code": "50"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Sarajevsko-Zvornička regija",
+    "name": "Zvornik",
+    "code": "49"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Trebinjsko-Fočanska regija",
+    "name": "Berkovići",
+    "code": "127"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Trebinjsko-Fočanska regija",
+    "name": "Bileća",
+    "code": "78"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Trebinjsko-Fočanska regija",
+    "name": "Čajniče",
+    "code": "109"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Trebinjsko-Fočanska regija",
+    "name": "Foča",
+    "code": "124"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Trebinjsko-Fočanska regija",
+    "name": "Gacko",
+    "code": "73"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Trebinjsko-Fočanska regija",
+    "name": "Istočni Mostar",
+    "code": "70"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Trebinjsko-Fočanska regija",
+    "name": "Kalinovik",
+    "code": "120"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Trebinjsko-Fočanska regija",
+    "name": "Ljubinje",
+    "code": "63"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Trebinjsko-Fočanska regija",
+    "name": "Nevesinje",
+    "code": "60"
+  },
+  {
+    "entity": "Republika Srpska",
+    "group": "Trebinjsko-Fočanska regija",
+    "name": "Trebinje",
+    "code": "111"
+  },
+  {
+    "entity": "Brčko Distrikt",
+    "group": "Brčko distrikt",
+    "name": "Brčko",
+    "code": "75"
+  }
+]
