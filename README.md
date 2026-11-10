@@ -4,7 +4,8 @@ Jedan JSON fajl sa entitetima, kantonima, regijama, gradovima i općinama u Bosn
 
 ![Format: JSON](https://img.shields.io/badge/format-JSON-blue)
 ![Gradovi i općine: 138](https://img.shields.io/badge/gradovi%20i%20op%C4%87ine-138-green)
-![Države van BiH: 40](https://img.shields.io/badge/dr%C5%BEave%20van%20BiH-40-orange)
+![Države van BiH: 39](https://img.shields.io/badge/dr%C5%BEave%20van%20BiH-39-orange)
+[![Licenca: MIT](https://img.shields.io/badge/licenca-MIT-yellow)](./LICENSE)
 
 Nakon sati i sati pretraživanja po internetu, shvatila sam koliko je teško doći do ovakve liste kada praviš svoj app, platformu, šta god. Zato ostavljam jedan jedini JSON fajl za sve studente i programere početnike, u kojem su:
 
@@ -35,7 +36,7 @@ Fajl: [`kantoni i mjesta u BiH.json`](./kantoni%20i%20mjesta%20u%20BiH.json)
 | `Federacija BiH` | kantoni | 10 | 78 |
 | `Republika Srpska` | regije | 4 | 59 |
 | `Brčko Distrikt` | distrikt | 1 | 1 |
-| `Van BiH` | `Države` | 1 | 40 |
+| `Van BiH` | `Države` | 1 | 39 |
 | **Ukupno u BiH** | | **15** | **138** |
 
 <details>
@@ -92,7 +93,7 @@ Isječak iz fajla:
 ```
 
 > [!NOTE]
-> Porijeklo i značenje vrijednosti `code` trenutno nisu dokumentovani. Kodovi su jedinstveni unutar BiH dijela, ali kodovi država u `Van BiH` su zaseban skup i nisu ISO kodovi, pa ih ne miješajte sa kodovima mjesta. Lista `Države` uključuje i samu Bosnu i Hercegovinu.
+> Porijeklo i značenje vrijednosti `code` trenutno nisu dokumentovani. Kodovi su jedinstveni unutar BiH dijela, ali kodovi država u `Van BiH` su zaseban skup i nisu ISO kodovi, pa ih ne miješajte sa kodovima mjesta.
 
 ## Kako koristiti
 
@@ -162,4 +163,4 @@ Podaci su prikupljeni ručno i mogu biti nepotpuni ili zastarjeli. Prije upotreb
 
 ## Licenca
 
-Licenca još nije definisana.
+Objavljeno pod [MIT licencom](./LICENSE).
