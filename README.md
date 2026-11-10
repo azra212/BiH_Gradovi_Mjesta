@@ -3,7 +3,7 @@
 Jedan JSON fajl sa entitetima, kantonima, regijama, gradovima i općinama u Bosni i Hercegovini, plus lista nekih popularnih država van BiH. Spreman za dropdown liste, forme i seed podatke u vašoj aplikaciji.
 
 ![Format: JSON](https://img.shields.io/badge/format-JSON-blue)
-![Gradovi i općine: 138](https://img.shields.io/badge/gradovi%20i%20op%C4%87ine-138-green)
+![Gradovi i općine: 144](https://img.shields.io/badge/gradovi%20i%20op%C4%87ine-144-green)
 ![Države van BiH: 39](https://img.shields.io/badge/dr%C5%BEave%20van%20BiH-39-orange)
 [![Licenca: MIT](https://img.shields.io/badge/licenca-MIT-yellow)](./LICENSE)
 
@@ -33,11 +33,11 @@ Fajl: [`kantoni i mjesta u BiH.json`](./kantoni%20i%20mjesta%20u%20BiH.json)
 
 | Ključ (prvi nivo) | Podgrupe | Broj podgrupa | Broj stavki |
 | --- | --- | ---: | ---: |
-| `Federacija BiH` | kantoni | 10 | 78 |
-| `Republika Srpska` | regije | 4 | 59 |
+| `Federacija BiH` | kantoni | 10 | 79 |
+| `Republika Srpska` | regije | 4 | 64 |
 | `Brčko Distrikt` | distrikt | 1 | 1 |
 | `Van BiH` | `Države` | 1 | 39 |
-| **Ukupno u BiH** | | **15** | **138** |
+| **Ukupno u BiH** | | **15** | **144** |
 
 <details>
 <summary>Broj gradova i općina po kantonu/regiji</summary>
@@ -48,15 +48,15 @@ Fajl: [`kantoni i mjesta u BiH.json`](./kantoni%20i%20mjesta%20u%20BiH.json)
 | Federacija BiH | Posavski kanton | 3 |
 | Federacija BiH | Tuzlanski kanton | 13 |
 | Federacija BiH | Zeničko-dobojski kanton | 12 |
-| Federacija BiH | Bosansko-podrinjski kanton | 2 |
+| Federacija BiH | Bosansko-podrinjski kanton | 3 |
 | Federacija BiH | Srednjobosanski kanton | 12 |
 | Federacija BiH | Hercegovačko-neretvanski kanton | 9 |
 | Federacija BiH | Zapadnohercegovački kanton | 4 |
 | Federacija BiH | Kanton Sarajevo | 9 |
 | Federacija BiH | Kanton 10 | 6 |
-| Republika Srpska | Banjalučka regija | 18 |
+| Republika Srpska | Banjalučka regija | 21 |
 | Republika Srpska | Dobojsko-Bijeljinska regija | 14 |
-| Republika Srpska | Sarajevsko-Zvornička regija | 17 |
+| Republika Srpska | Sarajevsko-Zvornička regija | 19 |
 | Republika Srpska | Trebinjsko-Fočanska regija | 10 |
 | Brčko Distrikt | Brčko distrikt | 1 |
 
@@ -94,6 +94,8 @@ Isječak iz fajla:
 
 > [!NOTE]
 > Porijeklo i značenje vrijednosti `code` trenutno nisu dokumentovani. Kodovi su jedinstveni unutar BiH dijela, ali kodovi država u `Van BiH` su zaseban skup i nisu ISO kodovi, pa ih ne miješajte sa kodovima mjesta.
+>
+> Šest naknadno dodanih jedinica još nema kod (`"code": ""`): Pale (FBiH), Istočni Drvar, Kupres (RS), Petrovac, Istočno Novo Sarajevo i Trnovo (RS). Službene šifre FZS-a i RZS-a koriste drugačiji sistem od postojećih kodova u fajlu, pa ih nismo miješali. Oznake `(FBiH)` i `(RS)` služe samo da se razlikuju istoimene općine u dva entiteta.
 
 ## Kako koristiti
 
@@ -118,7 +120,7 @@ const mjesta = Object.entries(data)
   .filter(([grupa]) => grupa !== "Van BiH")
   .flatMap(([, podgrupe]) => Object.values(podgrupe).flat());
 
-console.log(mjesta.length); // 138
+console.log(mjesta.length); // 144
 ```
 
 ### PHP
@@ -159,7 +161,14 @@ Molim vas da ne mijenjate naziv postojećeg fajla, jer ga drugi projekti možda 
 
 ## Napomena o podacima
 
-Podaci su prikupljeni ručno i mogu biti nepotpuni ili zastarjeli. Prije upotrebe u službene ili pravne svrhe provjerite ih u zvaničnim izvorima (npr. Agencija za statistiku BiH, zavodi za statistiku entiteta).
+Podaci su prikupljeni ručno i mogu biti nepotpuni ili zastarjeli. Prije upotrebe u službene ili pravne svrhe provjerite ih u zvaničnim izvorima.
+
+Spisak jedinica lokalne samouprave usklađen je sa:
+
+- Federalni zavod za statistiku: [Šifarnik jedinica lokalne samouprave i naseljenih mjesta u FBiH, stanje 31.12.2019.](https://fzs.ba/wp-content/uploads/2020/01/Sifarnik-JLS-i-naseljenih-mjesta-u-F-BiH_stanje31122019.pdf) (79 JLS)
+- Republički zavod za statistiku RS: [Gradovi i opštine Republike Srpske, 2023.](https://www.rzs.rs.ba/static/uploads/bilteni/gradovi_i_opstine_republike_srpske/2023/Gradovi_I_Opstine_Republike_Srpske_2023_WEB.pdf) (53 opštine i 11 gradova)
+
+Podjela RS na regije nije dio ovih izvora; nove jedinice su raspoređene u postojeće regije po geografskom položaju.
 
 ## Licenca
 
