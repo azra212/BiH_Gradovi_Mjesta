@@ -1,0 +1,43 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.13"
+
+      - name: JSON Schema
+        run: |
+          pip install --disable-pip-version-check check-jsonschema==0.39.0
+          check-jsonschema --check-metaschema schema/kantoni-i-mjesta.schema.json
+          check-jsonschema --schemafile schema/kantoni-i-mjesta.schema.json "kantoni i mjesta u BiH.json"
+
+      - name: Pravila podataka
+        run: npm run validate
+
+      - name: dist/ je ažuran
+        run: npm run build -- --check
