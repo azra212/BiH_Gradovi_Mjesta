@@ -1,0 +1,39 @@
+name: Ispravka podataka
+description: Prijavi pogrešan, nedostajući ili zastario podatak.
+title: "[podaci] "
+labels: ["podaci"]
+body:
+  - type: dropdown
+    id: vrsta
+    attributes:
+      label: Vrsta izmjene
+      options:
+        - Pogrešan naziv
+        - Pogrešan kanton / regija
+        - Nedostaje stavka
+        - Stavka ne postoji / višak
+        - Kod (code)
+        - Drugo
+    validations:
+      required: true
+  - type: input
+    id: stavka
+    attributes:
+      label: Stavka
+      description: Entitet → kanton/regija → naziv, kako stoji u fajlu.
+      placeholder: Federacija BiH → Kanton 10 → Livno
+    validations:
+      required: true
+  - type: textarea
+    id: ispravka
+    attributes:
+      label: Kako bi trebalo biti
+    validations:
+      required: true
+  - type: input
+    id: izvor
+    attributes:
+      label: Izvor
+      description: Link na zvanični izvor (zakon, službeni glasnik, FZS, RZS RS, BHAS).
+    validations:
+      required: true
