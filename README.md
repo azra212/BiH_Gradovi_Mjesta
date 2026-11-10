@@ -1,46 +1,49 @@
-# 🇧🇦 BiH gradovi i mjesta (JSON)
+# BiH gradovi i mjesta
 
-Jedan JSON fajl sa entitetima, kantonima, regijama, gradovima i općinama u Bosni i Hercegovini, plus lista nekih popularnih država van BiH. Spreman za dropdown liste, forme i seed podatke u vašoj aplikaciji.
-
-![Format: JSON](https://img.shields.io/badge/format-JSON-blue)
-![Gradovi i općine: 144](https://img.shields.io/badge/gradovi%20i%20op%C4%87ine-144-green)
-![Države van BiH: 39](https://img.shields.io/badge/dr%C5%BEave%20van%20BiH-39-orange)
+[![Validate](https://github.com/azra212/BiH_Gradovi_Mjesta/actions/workflows/validate.yml/badge.svg)](https://github.com/azra212/BiH_Gradovi_Mjesta/actions/workflows/validate.yml)
 [![Licenca: MIT](https://img.shields.io/badge/licenca-MIT-yellow)](./LICENSE)
+![Format: JSON | CSV](https://img.shields.io/badge/format-JSON%20%7C%20CSV-blue)
+![Gradovi i općine: 144](https://img.shields.io/badge/gradovi%20i%20op%C4%87ine-144-green)
 
-Nakon sati i sati pretraživanja po internetu, shvatila sam koliko je teško doći do ovakve liste kada praviš svoj app, platformu, šta god. Zato ostavljam jedan jedini JSON fajl za sve studente i programere početnike, u kojem su:
+Svi gradovi i općine u Bosni i Hercegovini, razvrstani po entitetima, kantonima FBiH i regijama RS, plus lista najčešćih država van BiH. Jedan provjeren JSON fajl, spreman za dropdown liste, forme i seed podatke, uz izvedene CSV i ravne JSON formate.
 
-- entiteti u BiH (i Brčko distrikt)
-- gradovi i općine u BiH
-- kantoni u FBiH
-- regije u RS
-- lista nekih "popularnih" država van BiH
+> Nakon sati i sati pretraživanja po internetu, shvatila sam koliko je teško doći do ovakve liste kada praviš svoj app, platformu, šta god. Zato ostavljam jedan jedini JSON fajl za sve studente i programere početnike.
+>
+> — Azra
 
 ## Sadržaj
 
+- [Brzi start](#brzi-start)
 - [Šta sadrži](#šta-sadrži)
-- [Struktura fajla](#struktura-fajla)
-- [Kako koristiti](#kako-koristiti)
-  - [JavaScript](#javascript)
-  - [PHP](#php)
-  - [Python](#python)
-- [Kako doprinijeti](#kako-doprinijeti)
-- [Napomena o podacima](#napomena-o-podacima)
+- [Formati](#formati)
+- [Struktura](#struktura)
+- [Primjeri](#primjeri)
+- [Validacija](#validacija)
+- [Izvori i metodologija](#izvori-i-metodologija)
+- [Plan razvoja](#plan-razvoja)
+- [Doprinos](#doprinos)
 - [Licenca](#licenca)
 
-## Šta sadrži
+## Brzi start
 
-Fajl: [`kantoni i mjesta u BiH.json`](./kantoni%20i%20mjesta%20u%20BiH.json)
+```sh
+curl -L "https://raw.githubusercontent.com/azra212/BiH_Gradovi_Mjesta/main/kantoni%20i%20mjesta%20u%20BiH.json"
+```
+
+Za produkciju je bolje kopirati fajl u svoj projekat nego ga učitavati sa GitHuba pri svakom zahtjevu.
+
+## Šta sadrži
 
 | Ključ (prvi nivo) | Podgrupe | Broj podgrupa | Broj stavki |
 | --- | --- | ---: | ---: |
 | `Federacija BiH` | kantoni | 10 | 79 |
 | `Republika Srpska` | regije | 4 | 64 |
 | `Brčko Distrikt` | distrikt | 1 | 1 |
-| `Van BiH` | `Države` | 1 | 39 |
 | **Ukupno u BiH** | | **15** | **144** |
+| `Van BiH` | `Države` | 1 | 39 |
 
 <details>
-<summary>Broj gradova i općina po kantonu/regiji</summary>
+<summary>Broj gradova i općina po kantonu / regiji</summary>
 
 | Entitet | Kanton / regija | Broj |
 | --- | --- | ---: |
@@ -62,15 +65,25 @@ Fajl: [`kantoni i mjesta u BiH.json`](./kantoni%20i%20mjesta%20u%20BiH.json)
 
 </details>
 
-## Struktura fajla
+## Formati
 
-Fajl ima tri nivoa:
+| Fajl | Format | Sadržaj |
+| --- | --- | --- |
+| [`kantoni i mjesta u BiH.json`](./kantoni%20i%20mjesta%20u%20BiH.json) | JSON, ugniježđen | Izvorni fajl: entitet → kanton/regija → stavke, plus `Van BiH` → `Države` |
+| [`dist/mjesta.json`](./dist/mjesta.json) | JSON, ravna lista | `{ entity, group, name, code }` za 144 grada i općine |
+| [`dist/mjesta.csv`](./dist/mjesta.csv) | CSV (UTF-8) | Kolone `entity,group,name,code` |
+| [`dist/drzave.json`](./dist/drzave.json) | JSON, ravna lista | `{ name, code }` za 39 država |
+| [`dist/drzave.csv`](./dist/drzave.csv) | CSV (UTF-8) | Kolone `name,code` |
+
+Izvorni fajl je izvor istine. Fajlovi u `dist/` se generišu skriptom i ne uređuju se ručno. Raw linkovi imaju oblik `https://raw.githubusercontent.com/azra212/BiH_Gradovi_Mjesta/main/<putanja>`; razmak u nazivu izvornog fajla piše se kao `%20`.
+
+## Struktura
+
+Izvorni fajl ima tri nivoa:
 
 1. **Entitet / grupa**: `Federacija BiH`, `Republika Srpska`, `Brčko Distrikt`, `Van BiH`
 2. **Kanton / regija / podgrupa**: npr. `Unsko-sanski kanton`, `Banjalučka regija`, `Države`
-3. **Lista stavki**: svaka stavka je objekat sa poljima `name` i `code` (oba su stringovi)
-
-Isječak iz fajla:
+3. **Lista stavki**: objekti sa poljima `name` i `code`, oba su stringovi
 
 ```json
 {
@@ -84,28 +97,14 @@ Isječak iz fajla:
     "Brčko distrikt": [{ "name": "Brčko", "code": "75" }]
   },
   "Van BiH": {
-    "Države": [
-      { "name": "Albanija", "code": "24" },
-      { "name": "Australija", "code": "59" }
-    ]
+    "Države": [{ "name": "Albanija", "code": "24" }]
   }
 }
 ```
 
-> [!NOTE]
-> Porijeklo i značenje vrijednosti `code` trenutno nisu dokumentovani. Kodovi su jedinstveni unutar BiH dijela, ali kodovi država u `Van BiH` su zaseban skup i nisu ISO kodovi, pa ih ne miješajte sa kodovima mjesta.
->
-> Šest naknadno dodanih jedinica još nema kod (`"code": ""`): Pale (FBiH), Istočni Drvar, Kupres (RS), Petrovac, Istočno Novo Sarajevo i Trnovo (RS). Službene šifre FZS-a i RZS-a koriste drugačiji sistem od postojećih kodova u fajlu, pa ih nismo miješali. Oznake `(FBiH)` i `(RS)` služe samo da se razlikuju istoimene općine u dva entiteta.
+Formalni opis je u [`schema/kantoni-i-mjesta.schema.json`](./schema/kantoni-i-mjesta.schema.json) (JSON Schema, draft 2020-12).
 
-## Kako koristiti
-
-Raw URL (razmak u nazivu fajla je kodiran kao `%20`):
-
-```
-https://raw.githubusercontent.com/azra212/BiH_Gradovi_Mjesta/main/kantoni%20i%20mjesta%20u%20BiH.json
-```
-
-Za produkciju je bolje fajl kopirati u svoj projekat nego ga učitavati sa GitHuba pri svakom zahtjevu.
+## Primjeri
 
 ### JavaScript
 
@@ -148,28 +147,46 @@ for kanton, mjesta in data["Federacija BiH"].items():
     print(kanton, len(mjesta))
 ```
 
-## Kako doprinijeti
+## Validacija
 
-Doprinosi su dobrodošli. Ubacite ovo u ChatGPT i generišite još JSON-a kakvih hoćete, ili ispravite postojeće podatke, i slobodno pošaljite da ubacimo ovdje:
+Svaki push i pull request prolazi [GitHub Actions provjeru](./.github/workflows/validate.yml):
 
-1. Napravite fork repozitorija.
-2. Napravite novi branch (npr. `ispravka-hnk`).
-3. Uredite podatke i zadržite postojeći format: ista struktura, polja `name` i `code` kao stringovi, validan JSON.
-4. Otvorite pull request sa kratkim opisom izmjene i, ako možete, izvorom podataka.
+- izvorni fajl je validan JSON i odgovara JSON Schemi;
+- nazivi su neprazni, bez duplikata unutar BiH i unutar liste država; kodovi su jedinstveni gdje postoje;
+- broj jedinica po entitetu odgovara zvaničnim izvorima (FBiH 79, RS 64, Brčko 1);
+- `dist/` je ažuran u odnosu na izvorni fajl.
 
-Molim vas da ne mijenjate naziv postojećeg fajla, jer ga drugi projekti možda učitavaju preko raw linka. Novi skupovi podataka mogu ići u nove fajlove.
+Lokalno (Node.js 20+, bez dodatnih paketa):
 
-## Napomena o podacima
+```sh
+npm run check    # validacija + provjera dist/
+npm run build    # regeneriše dist/
+```
 
-Podaci su prikupljeni ručno i mogu biti nepotpuni ili zastarjeli. Prije upotrebe u službene ili pravne svrhe provjerite ih u zvaničnim izvorima.
+## Izvori i metodologija
 
-Spisak jedinica lokalne samouprave usklađen je sa:
+- **Federacija BiH**: Federalni zavod za statistiku, [Šifarnik jedinica lokalne samouprave i naseljenih mjesta u FBiH, stanje 31.12.2019.](https://fzs.ba/wp-content/uploads/2020/01/Sifarnik-JLS-i-naseljenih-mjesta-u-F-BiH_stanje31122019.pdf) (10 kantona, 79 JLS)
+- **Republika Srpska**: Republički zavod za statistiku RS, [Gradovi i opštine Republike Srpske, 2023.](https://www.rzs.rs.ba/static/uploads/bilteni/gradovi_i_opstine_republike_srpske/2023/Gradovi_I_Opstine_Republike_Srpske_2023_WEB.pdf) (53 opštine i 11 gradova)
+- **Brčko distrikt BiH**: jedna jedinica.
 
-- Federalni zavod za statistiku: [Šifarnik jedinica lokalne samouprave i naseljenih mjesta u FBiH, stanje 31.12.2019.](https://fzs.ba/wp-content/uploads/2020/01/Sifarnik-JLS-i-naseljenih-mjesta-u-F-BiH_stanje31122019.pdf) (79 JLS)
-- Republički zavod za statistiku RS: [Gradovi i opštine Republike Srpske, 2023.](https://www.rzs.rs.ba/static/uploads/bilteni/gradovi_i_opstine_republike_srpske/2023/Gradovi_I_Opstine_Republike_Srpske_2023_WEB.pdf) (53 opštine i 11 gradova)
+Napomene:
 
-Podjela RS na regije nije dio ovih izvora; nove jedinice su raspoređene u postojeće regije po geografskom položaju.
+- **Regije RS** nisu dio navedenih izvora. Fajl koristi četiri regije radi grupisanja; jedinice dodane naknadno raspoređene su po geografskom položaju.
+- **Kodovi (`code`)** potiču iz izvorne liste čije porijeklo nije dokumentovano. Nisu službene šifre FZS/RZS ni ISO kodovi, a kodovi država su zaseban skup. Šest naknadno dodanih jedinica još nema kod (`"code": ""`).
+- **Istoimene općine** u dva entiteta razlikuju se oznakom u nazivu kod naknadno dodanih stavki: `Pale (FBiH)`, `Kupres (RS)`, `Trnovo (RS)`.
+- Podaci mogu biti nepotpuni ili zastarjeli. Za službene i pravne svrhe provjerite ih u zvaničnim izvorima.
+
+## Plan razvoja
+
+- Službene šifre jedinica lokalne samouprave (FZS / RZS) kao zasebno polje
+- Koordinate sjedišta općina
+- Naseljena mjesta i poštanski brojevi kao zasebni fajlovi
+- npm paket sa tipovima
+
+## Doprinos
+
+Ispravke i dopune su dobrodošle, posebno uz link na zvanični izvor. Pogledaj [CONTRIBUTING.md](./CONTRIBUTING.md) ili otvori [issue za ispravku podataka](https://github.com/azra212/BiH_Gradovi_Mjesta/issues/new?template=ispravka-podataka.yml). Izmjene su opisane u [CHANGELOG.md](./CHANGELOG.md).
 
 ## Licenca
 
-Objavljeno pod [MIT licencom](./LICENSE).
+[MIT](./LICENSE) © 2025 Azra Kadrić
